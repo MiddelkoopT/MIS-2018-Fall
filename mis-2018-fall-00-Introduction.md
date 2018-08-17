@@ -4,8 +4,6 @@
 
 Material Copyright 2017, 2018 by Timothy Middelkoop. Sourcecode licensed under the Apache License, Version 2.0. Documentation licensed under CC by SA 3.0.
 
-## Topic 1 - Management Information Systems
-
 ## Introduction to MIS 
 
 So you want to be an Engineer. You need to use, understand, and be
