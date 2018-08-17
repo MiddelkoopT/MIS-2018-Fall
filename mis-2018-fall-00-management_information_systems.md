@@ -14,7 +14,7 @@ comfortable with information technology.  This is the course for that.
 ### Outline 
  * Welcome and personal introduction
  * Motivation for the class (information technology and computational engineering)
- * Module Outline
+ * Module outline
  * Hands on with secure shell (ssh).
 
 ### Hands on
@@ -73,3 +73,9 @@ All this is all brought together by **teams** with
  * community.
 
 ** Security a fundamental property of systems and applications.
+
+### Assigned Reading
+* ISBB Chapter 2 - Hardware (https://bus206.pressbooks.com/chapter/chapter-2/)
+* ISBB Chapter 3 - Software (https://bus206.pressbooks.com/chapter/chapter-3/)
+
+
