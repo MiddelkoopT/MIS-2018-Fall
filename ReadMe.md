@@ -2,7 +2,7 @@
 
 ## Module 1 - Introduction to Management Information Systems Design
 
-Material Copyright 2017 by Timothy Middelkoop. Sourcecode licensed under the Apache License, Version 2.0. Documentation licensed under CC by SA 3.0.
+Material Copyright 2017, 2018 by Timothy Middelkoop. Sourcecode licensed under the Apache License, Version 2.0. Documentation licensed under CC by SA 3.0.
 
 All cases of academic dishonesty will be handled in accordance with university policies and regulations.  The minimum penalty for a reported academic honesty violation in this module is a zero on the assignment.
 
