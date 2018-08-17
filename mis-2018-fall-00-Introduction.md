@@ -75,3 +75,4 @@ All this is all brought together by **teams** with
 ### Assigned Reading
 * ISBB Chapter 2 - Hardware (https://bus206.pressbooks.com/chapter/chapter-2/)
 * ISBB Chapter 3 - Software (https://bus206.pressbooks.com/chapter/chapter-3/)
+* ISBB Chapter 5 - Networking (https://bus206.pressbooks.com/chapter/chapter-5-networking-and-communication/)
