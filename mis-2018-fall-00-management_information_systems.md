@@ -23,7 +23,7 @@ comfortable with information technology.  This is the course for that.
    * MobaXterm (https://missouri.app.box.com/rcss-mobaxterm) for Windows, 
    * Putty (https://the.earth.li/~sgtatham/putty/latest/w32/putty.exe ) for Windows, 
    * or hterm, the Chrome browser “Secure Shell” extension for Windows, Mac, and Chromebooks (https://chrome.google.com/webstore/detail/secure-shell/pnhechapfaindjhompbnflcldabbghjo).
-   * Mac users can use the built-in terminal by launching it from Spotlight by hitting `Command + Spacebar` and typing `Terminal` and then return.  To connect to the teaching cluster enter the command `ssh pawprint@tc.rnet.missouri.edu` where `pawprint` is your login (SSO) and enter your password when prompted.
+   * Mac users can use the built-in terminal by launching it from Spotlight by hitting `Command + Spacebar` and typing `Terminal` and then return.  To connect to the teaching cluster enter the command `ssh pawprint@clark.rnet.missouri.edu` where `pawprint` is your login (SSO) and enter your password when prompted.
 
 ### Homework 0
   1. Homework 0-1: Using Secure Shell
