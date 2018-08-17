@@ -4,6 +4,8 @@
 
 Material Copyright 2017 by Timothy Middelkoop. Sourcecode licensed under the Apache License, Version 2.0. Documentation licensed under CC by SA 3.0.
 
+All cases of academic dishonesty will be handled in accordance with university policies and regulations.  The minimum penalty for a reported academic honesty violation in this module is a zero on the assignment.
+
 ### Objective
 This module is designed to teach students principles, methods, design
 aspects, and security implications of information technology systems
