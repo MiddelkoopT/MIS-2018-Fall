@@ -57,7 +57,7 @@ where `git@gitlab.missouri.edu:middelkoopt/welcome.git` is the pasted from the s
 ### Homework
 
 1. Homework 1-2: Gitlabs
-    1. Create a repository on https://gitlab.missouri.edu called mis-pawprint-first-last as described in the Hands-On section.
+    1. Create a repository on https://gitlab.missouri.edu called mis-pawprint-first-last as described in the Hands-On section (`git@gitlab.missouri.edu:$PAWPRINT/mis-$PAWPRINT-$FIRST-$LAST.git`).
     2. Assign "Reporter" permissions to `@middelkoopt`, `@srinivassh` and `@nzqpc` to the project
     3. Create a `ReadMe.md` file and commit it to the repository (note the upper/lower case and spelling).
     4. Clone the repository on `clark.rnet.missouri.edu`
