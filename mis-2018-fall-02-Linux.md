@@ -68,4 +68,6 @@ where `git@gitlab.missouri.edu:middelkoopt/welcome.git` is the pasted from the s
 * Software Carpentry: Linux Shell (http://swcarpentry.github.io/shell-novice/) sections 1-3
 * Pro Git book https://git-scm.com/book/en/v2
 * Software Carpentry - Git http://swcarpentry.github.io/git-novice/
+* GitLabs Markdown https://docs.gitlab.com/ee/user/markdown.html
+
 
