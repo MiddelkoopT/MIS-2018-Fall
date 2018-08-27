@@ -8,6 +8,28 @@ Material Copyright 2017, 2018 by Timothy Middelkoop. Sourcecode licensed under t
 
 And in the beginning there was git. `git init`
 
+### Basic Linux
+There are a number of good tutorials and videos online.  We use the Software Carpentry website section on the Linux Shell (http://swcarpentry.github.io/shell-novice/) sections 1-3.
+
+To get help run the `man` command with the first argument with the name of the command.  Many programs you can also just run the command with `--help`, for example `man --help`.
+
+CLI Concepts:
+* prompt/shell, path, file, program, arguments, switches
+
+Basic commands:
+* `man`, `ls`, `pwd`, `cd`, `mkdir`, `rmdir`, `mv`, `rm`, `echo`, `touch`, `cat`, `less`, `grep`, `wc`, `sort`, `gzip`
+* `git`
+* `ssh`, `wget`, `curl`, `rsync`
+* `tar`, `unzip`, `zip`
+* `exit`
+
+Redirection:
+* `<`, `>`, `>>`, `|`, 
+
+Editors:
+* `nano`, `emacs`, `vi`
+
+
 ### Git
 
 We will first create a `gitlab.missouri.edu` repository and clone it.
@@ -51,8 +73,6 @@ Now go to your class folder on `clark.rnet.missouri.edu` and clone the repositor
 git clone git@gitlab.missouri.edu:middelkoopt/welcome.git
 ```
 where `git@gitlab.missouri.edu:middelkoopt/welcome.git` is the pasted from the step before.
-
-### Editing Files
 
 ### Homework
 
