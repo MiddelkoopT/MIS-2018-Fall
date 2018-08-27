@@ -54,6 +54,16 @@ where `git@gitlab.missouri.edu:middelkoopt/welcome.git` is the pasted from the s
 
 ### Editing Files
 
+### Homework
+
+1. Homework 1-2: Gitlabs
+    1. Create a repository on https://gitlab.missouri.edu called mis-pawprint-first-last as described in the Hands-On section.
+    2. Assign "Reporter" permissions to `@middelkoopt`, `@srinivassh` and `@nzqpc` to the project
+    3. Create a `ReadMe.md` file and commit it to the repository (note the upper/lower case and spelling).
+    4. Clone the repository on `clark.rnet.missouri.edu`
+    5. Bonus: Modify the `ReadMe.md` on `clark.rnet.missouri.edu` and push it back to `gitlab.missouri.edu`.
+	  6. Run `git log` and paste the last commit/revision/hash or the output of `git rev-parse HEAD` into the assignment to receive a grade.
+
 ### References
 * Software Carpentry: Linux Shell (http://swcarpentry.github.io/shell-novice/) sections 1-3
 * Pro Git book https://git-scm.com/book/en/v2
