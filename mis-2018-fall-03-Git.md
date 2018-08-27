@@ -7,6 +7,7 @@ Material Copyright 2017, 2018 by Timothy Middelkoop. Sourcecode licensed under t
 ## Topic 3 - Development Process and Community
 
 ### Reading
+Read Chapter 9 of the text.  Read the introduction material of the references and as much as you wish.
 * ISBB Chapter 9 - People https://bus206.pressbooks.com/chapter/chapter-people/
 
 ### References
