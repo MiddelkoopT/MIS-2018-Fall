@@ -61,8 +61,8 @@ where `git@gitlab.missouri.edu:middelkoopt/welcome.git` is the pasted from the s
     2. Assign "Reporter" permissions to `@middelkoopt`, `@srinivassh` and `@nzqpc` to the project
     3. Create a `ReadMe.md` file and commit it to the repository (note the upper/lower case and spelling).
     4. Clone the repository on `clark.rnet.missouri.edu`
-    5. Bonus: Modify the `ReadMe.md` on `clark.rnet.missouri.edu` and push it back to `gitlab.missouri.edu`.
-	  6. Run `git log` and paste the last commit/revision/hash or the output of `git rev-parse HEAD` into the assignment to receive a grade.
+    5. Modify the `ReadMe.md` on `clark.rnet.missouri.edu` and push it back to `gitlab.missouri.edu`.  Include your name and short one paragraph biography.
+    6. Run `git log` and paste the last commit/revision/hash or the output of `git rev-parse HEAD` into the homework assignment.
 
 ### References
 * Software Carpentry: Linux Shell (http://swcarpentry.github.io/shell-novice/) sections 1-3
