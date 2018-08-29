@@ -105,6 +105,32 @@ Using the hands-on instructions and the documentation complete the following hom
 	1a9c8bc7e3011f563d2370c35f592fc6c987bab4
 	git@gitlab.missouri.edu:middelkoopt/welcome.git
 	```
+2. Homework 1-4: Git Assignments
+Complete the following tasks:
+  1. If you have not already done so create a git repository on
+     `gitlab.missouri.edu` and share it with the instructors and TA.
+  2. Ensure that in the commit log the "Author:" line contains your
+     full name and email address and fix if need be.
+  3. Clean up your repository (removing any extra test files etc.) and commit the changes.
+  4. Create a folder called `homework-1-4` in the project and create a
+     file called `homework-1-4-shell.txt` that contains the *text* of
+     the commands and results (including the prompt) of the following:
+	 1. Create a file called `fruit.txt` in the `homework-1-4` folder
+        with a number of fruit names, one on each line.
+	 2. Display this file to the console/screen (hint `cat`).
+	 3. Count the number of fruit in this file using a pipe (`|`).
+	 4. Sort the fruit into a second file named `fruit-sorted.txt`
+        (hint: redirection).
+	 5. Show the changes to `fruit.txt` and `fruit-sorted.txt` that
+        you are about to commit and then commit these files to the
+        repository.
+	 6. What is the **commit** id of the previous step.
+	 7. Commit the *text* of the commands and results (including the
+        prompt) of the previous steps stored in the
+        `assessment-1-shell.txt` file.
+  6. Push all the commits to the `gitlab.missouri.edu` repository and submit the most
+     recent (HEAD) commit-id and the `gitlab.missouri.edu` repository URL to the course
+     assignment 'Homework 1-4'.
 
 ### Reading
 Read Chapter 9 of the text.  Read the introduction material of the references and as much as you wish.
