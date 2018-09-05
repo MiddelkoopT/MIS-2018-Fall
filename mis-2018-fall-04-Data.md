@@ -86,7 +86,7 @@ exit()
 ```
 
 ### Homework
-Homework 1-5: JSON and Python:
+Homework 1-4-1: JSON and Python
   1. In your class repository create a folder called `homework-1-5` and place all the files here.
   2. In this folder create a `example1.json` file with **valid** JSON that represents some data.  For example (but you cannot use this one) a sample from a weather station.
   3. Load this data into Python and do some simple calculations on it.  Feel free to read the Python manual for advanced commands.
