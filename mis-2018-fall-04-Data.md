@@ -94,6 +94,39 @@ Homework 1-4-1: JSON and Python
   4. Commit and push your work (the JSON and `output.md` file) to Gitlabs.
   6. Copy the `commit-id` and the repository URL
 
+### Hands-On SQLite3
+
+You may find the SQLite SQL Reference (http://www.sqlite.org/lang.html) useful in understanding commands.
+
+All the following examples are using the teaching cluster.  Please
+change your current directory to a folder to contain these examples
+(do not use your home folder).
+
+Get the data from the example
+```bash
+srun wget -c https://github.com/swcarpentry/sql-novice-survey/raw/gh-pages/files/survey.db
+```
+
+Start SQLite3 with the sample data
+```bash
+srun --pty sqlite3 survey.db
+```
+
+Use the `.help`, `.exit`, `.tables`, `.schema`, and `.dump` commands.
+
+### Homework
+
+Homework 1-4-2: SQLite3. 
+   1. Download and start `sqlite3` as per the above hands-on
+   instructions.  Complete the following and copy/paste the session
+   into the course assignment similarly named:
+	   1. Display the database schema.
+	   2. List the columns for the `Site` table.
+	   3. Who took samples from site  'DR-1' on '1927-02-10. (use a SQL comment `-- 1-4-2-3: Your answer` to record your answer)
+	   4. Write an SQL statement for the above question.
+	   6. Formulate another question to ask the database (use a SQL comment `-- 1-4-2-6: Your answer` to record your answer)
+	   7. Write and SQL statement for the above question.
+
 
 ### References
 * ASCII https://en.wikipedia.org/wiki/ASCII
