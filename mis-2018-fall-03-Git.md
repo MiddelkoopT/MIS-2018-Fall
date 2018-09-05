@@ -97,25 +97,25 @@ git rev-parse HEAD
 ### Homework
 Using the hands-on instructions and the documentation complete the following homework:
 
- 1. Homework 1-3: Git
-    1. Edit the file "ReadMe.md" or other file in your class repository (`git@gitlab.missouri.edu:$PAWPRINT/mis-$PAWPRINT-$FIRST-$LAST.git`) cloned on `clark.rnet.missouri.edu`.
-	2. Commit those changes and push them to `gitlab.missouri.edu`
-	3. Run `git log` and paste the last commit/revision/hash or the output of `git rev-parse HEAD` into the assignment along with your repository URL to receive a grade for example:
+Homework 1-3-1: Git
+  1. Edit the file "ReadMe.md" or other file in your class repository (`git@gitlab.missouri.edu:$PAWPRINT/mis-$PAWPRINT-$FIRST-$LAST.git`) cloned on `clark.rnet.missouri.edu`.
+  2. Commit those changes and push them to `gitlab.missouri.edu`
+  3. Run `git log` and paste the last commit/revision/hash or the output of `git rev-parse HEAD` into the assignment along with your repository URL to receive a grade for example:
 	```
 	1a9c8bc7e3011f563d2370c35f592fc6c987bab4
 	git@gitlab.missouri.edu:middelkoopt/welcome.git
 	```
-2. Homework 1-4: Git Assignments
-Complete the following tasks:
+
+Homework 1-3-2: Git Assignments
   1. If you have not already done so create a git repository on
      `gitlab.missouri.edu` and share it with the instructors and TA.
   2. Ensure that in the commit log the "Author:" line contains your
      full name and email address and fix if need be.
   3. Clean up your repository (removing any extra test files etc.) and commit the changes.
-  4. Create a folder called `homework-1-4` in the project and create a
-     file called `homework-1-4-shell.txt` that contains the *text* of
+  4. Create a folder called `homework-1-3` in the project and create a
+     file called `homework-1-3-shell.txt` that contains the *text* of
      the commands and results (including the prompt) of the following:
-	 1. Create a file called `fruit.txt` in the `homework-1-4` folder
+	 1. Create a file called `fruit.txt` in the `homework-1-3` folder
         with a number of fruit names, one on each line.
 	 2. Display this file to the console/screen (hint `cat`).
 	 3. Count the number of fruit in this file using a pipe (`|`).
@@ -127,10 +127,10 @@ Complete the following tasks:
 	 6. What is the **commit** id of the previous step.
 	 7. Commit the *text* of the commands and results (including the
         prompt) of the previous steps stored in the
-        `assessment-1-shell.txt` file.
+        `homework-1-3-shell.txt` file.
   6. Push all the commits to the `gitlab.missouri.edu` repository and submit the most
      recent (HEAD) commit-id and the `gitlab.missouri.edu` repository URL to the course
-     assignment 'Homework 1-4'.
+     assignment 'Homework 1-3'.
 
 ### Reading
 Read Chapter 9 of the text.  Read the introduction material of the references and as much as you wish.
