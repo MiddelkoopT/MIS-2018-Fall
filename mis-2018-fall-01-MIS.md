@@ -42,6 +42,10 @@ Application Scales
 * Cloud (Enterprise Off-Prem)
 * Internet Scale (Microservices)
 
+### Homework
+Homework 1-1: What is an information system?
+ 1. What are the five components that make up an information system?
+ 2. Of the five primary components of an information system (hardware, software, data, people, process), which do you think is the most important to the success of a business organization? Write a one-paragraph answer to this question that includes an example from your personal experience to support your answer.
 
 ### References
 * ASCII https://en.wikipedia.org/wiki/ASCII
