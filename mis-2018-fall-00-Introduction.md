@@ -63,12 +63,8 @@ All this is all brought together by **teams** with
 
 ** Security a fundamental property of systems and applications.
 
-### Homework 0
-  1. Homework 0-1: Using Secure Shell
-     1. Connect to clark.rnet.missouri.edu with your pawprint (SSO) and pawprint password and run the following commands and copy and paste the session (as text).
-        1. `hostname`
-        1. `whoami |sum`
-  2. Homework 0-2: What is an information system?
-     1. What are the five components that make up an information system?
-     2. Of the five primary components of an information system (hardware, software, data, people, process), which do you think is the most important to the success of a business organization? Write a one-paragraph answer to this question that includes an example from your personal experience to support your answer.
-
+### Homework
+Homework 1-0: Using Secure Shell
+ 1. Connect to clark.rnet.missouri.edu with your pawprint (SSO) and pawprint password and run the following commands and copy and paste the session (as text).
+    1. `hostname`
+    1. `whoami |sum`
