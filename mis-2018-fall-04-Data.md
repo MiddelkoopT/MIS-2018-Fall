@@ -228,7 +228,7 @@ LIMIT 10;
 
 Save the text to a file called `baseball.sql` and run the following command (it takes about 50 seconds to run):
 ```bash
-srun -c 'sqlite3 lahman2016.sqlite -header -csv < baseball.sql > baseball.csv'
+srun sqlite3 lahman2016.sqlite -header -csv < baseball.sql > baseball.csv
 ```
 
 Please note the `srun` command runs the `sqlite3` command on a node in
