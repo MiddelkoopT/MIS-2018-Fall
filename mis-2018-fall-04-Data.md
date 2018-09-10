@@ -13,7 +13,15 @@ In Module 1 Topic 4 we will cover "data" in information technology systems and t
 ### Reading
 * ISBB Chapter 4 - Data (https://bus206.pressbooks.com/chapter/chapter-4/)
 * JSON data format and specification: http://www.json.org/
-
+* Database design with UML and SQL, 3rd edition: http://www.tomjewett.com/dbdesign
+  * Models and languages http://www.tomjewett.com/dbdesign/dbdesign.php?page=models.html
+  * Basic structures: classes and schemes http://www.tomjewett.com/dbdesign/dbdesign.php?page=class.php
+  * Basic structures: rows and tables http://www.tomjewett.com/dbdesign/dbdesign.php?page=tables.php
+  * Basic structure: associations http://www.tomjewett.com/dbdesign/dbdesign.php?page=association.php
+  * Discussion: more about keys http://www.tomjewett.com/dbdesign/dbdesign.php?page=keys.php
+* Software Carpentry - Databases and SQL http://swcarpentry.github.io/sql-novice-survey/
+  * Section 1-6 (Selecting Data, Sorting and Removing Duplicates,
+    Filtering, Calculating New Values, Missing Data, and Aggregation).
 
 ### Data
 
