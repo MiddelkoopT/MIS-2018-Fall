@@ -94,9 +94,11 @@ Homework 1-4-1: JSON and Python
   4. Commit and push your work (the JSON and `output.md` file) to Gitlabs.
   6. Copy the `commit-id` and the repository URL
 
+
 ### Hands-On SQLite3
 
-You may find the SQLite SQL Reference (http://www.sqlite.org/lang.html) useful in understanding commands.
+You may find the SQLite SQL Reference
+(http://www.sqlite.org/lang.html) useful in understanding commands.
 
 All the following examples are using the teaching cluster.  Please
 change your current directory to a folder to contain these examples
@@ -117,16 +119,157 @@ Use the `.help`, `.exit`, `.tables`, `.schema`, and `.dump` commands.
 ### Homework
 
 Homework 1-4-2: SQLite3. 
-   1. Download and start `sqlite3` as per the above hands-on
-   instructions.  Complete the following and copy/paste the session
-   into the course assignment similarly named:
-	   1. Display the database schema.
-	   2. List the columns for the `Site` table.
-	   3. Who took samples from site  'DR-1' on '1927-02-10. (use a SQL comment `-- 1-4-2-3: Your answer` to record your answer)
-	   4. Write an SQL statement for the above question.
-	   6. Formulate another question to ask the database (use a SQL comment `-- 1-4-2-6: Your answer` to record your answer)
-	   7. Write and SQL statement for the above question.
 
+Download and start `sqlite3` as per the above hands-on instructions.
+Complete the following and copy/paste the session into the course
+assignment similarly named:
+  1. Display the database schema.
+  2. List the columns for the `Site` table.
+  3. Who took samples from site  'DR-1' on '1927-02-10. (use a SQL comment `-- 1-4-2-3: Your answer` to record your answer)
+  4. Write an SQL statement for the above question.
+  6. Formulate another question to ask the database (use a SQL comment `-- 1-4-2-6: Your answer` to record your answer)
+  7. Write and SQL statement for the above question.
+
+### Databases
+
+In this section we will explore relational databases in the context of
+an example database (https://chinookdatabase.codeplex.com/). Some of
+the examples are taken from http://www.sqlitetutorial.net/
+
+First create a simple database and use it.
+```bash
+srun --pty sqlite3 simple.db
+```
+
+```sql
+.header ON
+CREATE TABLE map (key string PRIMARY KEY, value number);
+INSERT INTO map (key,value) VALUES ("One",1),("Two",2);
+SELECT * FROM map WHERE key="One";
+UPDATE map SET value=100 WHERE key="One";
+DELETE FROM map WHERE key="One";
+```
+
+Save the database to an `.sql` file and commit it to git.
+```bash
+sqlite3 simple.db .dump > simple.sql
+git add simple.sql
+git diff -r HEAD
+git commit
+```
+
+### Database Example (chinook)
+
+Now download, unzip, and run the sample database.
+```bash
+wget -c http://www.sqlitetutorial.net/wp-content/uploads/2018/03/chinook.zip
+unzip chinook.zip
+srun --pty sqlite3 chinook.db
+```
+
+Review the database [**schema**](http://www.sqlitetutorial.net/wp-content/uploads/2018/03/sqlite-sample-database-diagram-color.pdf).
+
+Some sample queries:
+```sql
+SELECT * FROM tracks JOIN genres ON tracks.GenreId=genres.GenreId;
+SELECT CustomerId, InvoiceDate, BillingCity FROM invoices;
+```
+
+### Homework
+
+Homework 1-4-3: Chanook
+
+Download and load the chinook datbase as described in the notes and
+answer the following questions. Copy and paste the SQL commands into
+the file `homework-1-4-3/chanook.sql` and paste the commit-ID and
+repository in the course homework assignment.  For written questions
+use the "SQL Comment" syntax (`-- comment`) within SQLite.
+  1. Develop a simple question to ask the database.  The question must
+     limit the data to a subset of a table or tables.
+  2. Write and execute the SQL for the previous question.
+  3. Develop a more complex question will span at least two tables.
+  4. Write and execute the SQL for the previous question.
+
+
+### Example Database (Baseball)
+
+The next in-class example is using a baseball statistics database.
+ * Baseball Data http://www.seanlahman.com/baseball-archive/statistics/
+ * Sqlite3 version of the data https://github.com/jknecht/baseball-archive-sqlite
+
+```bash
+wget https://github.com/jknecht/baseball-archive-sqlite/raw/master/lahman2016.sqlite
+srun --pty sqlite3 lahman2016.sqlite
+```
+
+Many time you will want to save the query, not just run it in the
+shell.  To do this save the query in a file and *redirect* the output
+into the `sqlite3` command and optionally redirect the output to a
+file.  For the following example:
+
+What did the top 10 season hitters of all time make during that year?
+```sql
+SELECT 
+  Master.playerID, 
+  Master.NameLast,
+  Master.debut,
+  Salaries.YearID,
+  Batting.YearID,
+  Batting.H
+FROM
+  Master
+JOIN Salaries ON Master.playerID=Salaries.playerID
+JOIN Batting ON Master.playerID=Batting.playerID
+WHERE
+  Salaries.yearID=Batting.yearID
+ORDER BY Batting.H DESC, Master.playerID
+LIMIT 10;
+```
+
+Save the text to a file called `baseball.sql` and run the following command (it takes about 50 seconds to run):
+```bash
+srun -c 'sqlite3 lahman2016.sqlite -header -csv < baseball.sql > baseball.csv'
+```
+
+Please note the `srun` command runs the `sqlite3` command on a node in
+the cluster.  The `-header` and `-csv` make it so the output can be
+used by programs such as Excel, R, Julia, Python, etc.  One way to
+access the file is to commit it to git and download it from VCS.
+There are other tools to access files via either "sftp" or "rsync" but
+those methods are left as an exercise for the reader.
+
+### Homework
+
+Homework 1-4-4: Databases
+
+Design a small simple database based on a real world example with at
+least two relationships and three tables.  The database should be
+stored in `homework-1-4-4/realworld.sqlite` file and the SQL creation
+and queries should be placed in the `homework-1-4-4/realworld.sql`
+file and be annotated with SQL comments.  The metadata should be
+placed in the file `homework-1-4-4/realworld.md` and be written in
+gitlabs markdown in a similar format as the Baseball example used in
+class.  You must not use an example used in class, in any other
+assignment, or any other public or private source.  You must not use
+proprietary or sensitive data and all data must be synthetic (made
+up).
+  1. Describe the database structure in the
+     `homework-1-4-4/realworld.md` file.  Include as many sections as
+     relevant.  Describe all relevant relationships.
+  2. Using SQL create the tables.  Define the *Primary Key* but do no
+     not force referential integrity.
+  3. Populate the database with data in all tables, enough to be
+     non-trivial and be usable in the remaining questions.
+  4. Demonstrate the use of the `JOIN` statement on one or two
+     relationships.
+  5. Develop a simple question of the database and write the SQL to show
+     the answer.  This must be more than `SELECT * FROM simple`.
+  6. Develop a question that requires the use of the `GROUP BY` and
+     aggregate functions (`SUM`, `COUNT` etc.).  Write the SQL to show
+     the answer.
+  7. Commit `homework-1-4-4/realworld.sql` and
+     `homework-1-4-4/realworld.md` to your git class assignment
+     repository and push it to your class repository.
 
 ### References
 * ASCII https://en.wikipedia.org/wiki/ASCII
